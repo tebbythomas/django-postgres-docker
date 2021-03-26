@@ -1,5 +1,5 @@
 {% block content %}
-  <h1>Hi and welcome to this sample app!</h1>
+  <h1>Hello! Welcome to this image uploading app!</h1>
   <form action="{% url "upload" %}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     <input type="file" name="image_file">
